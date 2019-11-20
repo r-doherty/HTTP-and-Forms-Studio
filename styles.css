@@ -1,0 +1,64 @@
+div.formContainer
+{
+    margin: auto;
+    margin-top: 50px;
+    width: 75%;
+    border: 2px inset #555;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=text] {
+    display: flex;
+    margin: auto;
+    width: 75%;
+    border: 3px inset #555;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+input[type=text]:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+label {
+    display: flex;
+    padding: 10px;
+    font-size:20px;
+}
+
+input[type=radio] {
+    display: flex;
+    position: relative;
+    height: 15px; 
+    width: 35px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+button {
+    margin: auto;
+    width: 30%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+  
+button:hover 
+{
+    background-color: #008CBA; /* blue */
+    color: white;
+}
