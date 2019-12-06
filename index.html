@@ -4,6 +4,26 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src = "script.js"></script>
+	<script>
+		function setSearchEngine(){
+			let actions = 
+			{
+				"google": "https://www.google.com/search",
+				"duckDuckGo": "https://duckduckgo.com/",
+				"bing": "https://www.bing.com/search",
+				"ask": "https://www.ask.com/web"
+			};
+			let selectedEngine = document.querySelector("input[name=engine]:checked");
+			let action = actions[selectedEngine.value];
+			let form = document.getElementById("searchForm");
+			form.setAttribute('action',action);
+		}
+
+		window.addEventListener("load", function(){
+			let form = document.getElementById("searchForm");
+			form.addEventListener("submit", setSearchEngine)
+		});
+	</script>
 </head>
 
 <body>
